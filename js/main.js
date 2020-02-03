@@ -32,3 +32,11 @@ const clickFunction = ($event) => {
 const enableListeners = () => grid().forEach(squareEl => squareEl.addEventListener('click', clickFunction));
 const disableListeners = () => grid().forEach(squareEl => squareEl.removeEventListener('click', clickFunction));
 enableListeners();
+
+const endGame = () => {
+    
+}
+
+const checkForWin = () => {
+    
+}
