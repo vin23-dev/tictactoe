@@ -1,0 +1,48 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#board{
+    display: grid;
+    grid-template-rows: repeat(3, 10vmin);
+    grid-template-columns: repeat(3, 10vmin);
+    grid-gap: 0vmin;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    font-size: 100px;
+}
+
+.square {
+    border: 3px solid rgb(51, 15, 15);
+    font-size: 8vmin;
+    text-align: center;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+
+}
+.square:hover {
+    background-color: rgba(77, 89, 102, 0.3);
+}
+
+:root{
+    --cell-size: 100px;
+    --mark-size: cal(var(--cell-size) * .9);
+}
+button{
+    width: 100vw;
+}
+h1, h2{
+    text-align: center;
+}
