@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    justify-content: center;
 }
 
 #board{
@@ -22,7 +23,7 @@ body {
 }
 
 .square {
-    border: 3px solid rgb(51, 15, 15);
+    border: 3px solid black;
     font-size: 8vmin;
     text-align: center;
     vertical-align: middle;
@@ -32,17 +33,17 @@ body {
     padding: 0;
 
 }
-.square:hover {
-    background-color: rgba(77, 89, 102, 0.3);
-}
 
 :root{
     --cell-size: 100px;
     --mark-size: cal(var(--cell-size) * .9);
 }
-button{
-    width: 100vw;
+.btn{
+    width: 20vw;
+    text-align: center;
+    align-content: center;
 }
 h1, h2{
     text-align: center;
+    
 }
